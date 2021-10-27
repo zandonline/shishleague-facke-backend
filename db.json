@@ -1,1 +1,41 @@
-{}
+{
+  "setting": {
+    "appVersion": 1
+  },
+  "login": { "phoneNumber": "09360403533", "fullName": "" },
+  "verify": {
+    "phoneNumber": "",
+    "token": "",
+    "deviceInfo": {
+      "appName": "",
+      "manufacturer": "",
+      "systemName": "",
+      "systemVersion": "",
+      "buildNumber": "",
+      "bundleId": "",
+      "deviceId": "",
+      "deviceName": "",
+      "version": "",
+      "uniqueId": "",
+      "isTablet": true,
+      "ip": "",
+      "fcmToken": ""
+    }
+  },
+  "userSetting": {
+    "point": 123,
+    "rank": 123,
+    "coin": 123,
+    "prizes": [],
+    "wallet": 123123
+  },
+  "homepage": {
+    "banners": ["league details"],
+    "leagues": ["league details"]
+  },
+  "joinLeage": {
+    "canJoin": true,
+    "message": "",
+    "type": "TimePassed||pointsNeeded"
+  }
+}
