@@ -1,11 +1,12 @@
 {
+  "setting_req_get": {},
   "setting_res": {
     "appVersion": 1,
     "invitationMessage": "سلام به شیشلیگ بیا شیلیک بخور",
     "invitationTargetURL": "shishleague"
   },
-  "login_req": { "phoneNumber": "09360403533", "fullName": "" },
-  "verify_req": {
+  "login_req_post": { "phoneNumber": "09360403533", "fullName": "" },
+  "verify_req_post": {
     "phoneNumber": "",
     "token": "",
     "socket": "",
@@ -37,7 +38,7 @@
     "banners": ["league details"],
     "leagues": ["league details"]
   },
-  "joinLeague_req": { "league": { "_id": "" } },
+  "joinLeague_req_post": { "league": { "_id": "" } },
   "joinLeague_res": {
     "type": "questionPointLeage||questionCoinLeague||predictPointLeague||predictCoinLeage",
     "canJoin": true,
@@ -54,7 +55,7 @@
       }
     ]
   },
-  "leagueInfo_req": { "league": { "_id": "" } },
+  "leagueInfo_req_get": { "league": { "_id": "" } },
   "leagueInfo_res": {
     "type": "questionPointLeage||questionCoinLeague||predictPointLeague||predictCoinLeage",
     "totalPlayers": 123,
@@ -75,13 +76,13 @@
       }
     ]
   },
-  "selectCategory_req": { "_id": "", "league": { "_id": "" } },
+  "selectCategory_req_post": { "_id": "", "league": { "_id": "" } },
   "selectCategory_res": {
     "questionPoints": [10, 20, 30, 40],
     "deadLine": "123123132",
     "serverTime": "234234234"
   },
-  "selectQuestionPoint_req": { "point": 324, "category": { "_id": "" } },
+  "selectQuestionPoint_req_post": { "point": 324, "category": { "_id": "" } },
   "selectQuestionPoint_res": {
     "totalQuestions": 20,
     "currentQuestionPosition": 2,
@@ -93,12 +94,15 @@
       "options": []
     }
   },
-  "answer_req": { "question": { "_id": "" }, "selectedAnswer": { "_id": "" } },
-  "leagueLeaderBoard_req": { "league": { "_id": "" } },
+  "answer_req_post": {
+    "question": { "_id": "" },
+    "selectedAnswer": { "_id": "" }
+  },
+  "leagueLeaderBoard_req_get": { "league": { "_id": "" } },
   "leagueLeaderBoard_res": [
     { "_id": "", "name": "", "point": 123, "rank": 10 }
   ],
-  "leaderBoard_req": {
+  "leaderBoard_req_get": {
     "startTime": "234234",
     "endTime": "234234",
     "duration": "23"
