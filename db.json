@@ -32,5 +32,10 @@
   "homepage": {
     "banners": ["league details"],
     "leagues": ["league details"]
+  },
+  "joinLeage": {
+    "canJoin": true,
+    "message": "",
+    "type": "TimePassed||pointsNeeded"
   }
 }
