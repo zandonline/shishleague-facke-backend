@@ -1,4 +1,12 @@
 {
+  "status": [
+    {
+      "unAuthorized": 401,
+      "timePassed": 403,
+      "notEnoughtPoint": 403,
+      "capacityFilled": 403
+    }
+  ],
   "setting_req_get": {},
   "setting_res": {
     "appVersion": 1,
