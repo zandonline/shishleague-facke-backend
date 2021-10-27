@@ -1,9 +1,11 @@
 {
-  "setting": {
-    "appVersion": 1
+  "setting_res": {
+    "appVersion": 1,
+    "invitationMessage": "سلام به شیشلیگ بیا شیلیک بخور",
+    "invitationTargetURL": "shishleague"
   },
-  "login": { "phoneNumber": "09360403533", "fullName": "" },
-  "verify": {
+  "login_req": { "phoneNumber": "09360403533", "fullName": "" },
+  "verify_req": {
     "phoneNumber": "",
     "token": "",
     "deviceInfo": {
@@ -22,20 +24,67 @@
       "fcmToken": ""
     }
   },
-  "userSetting": {
+  "userSetting_res": {
     "point": 123,
     "rank": 123,
     "coin": 123,
     "prizes": [],
-    "wallet": 123123
+    "wallet": 123123,
+    "invitationCode": "ab4diUdb"
   },
-  "homepage": {
+  "homepage_res": {
     "banners": ["league details"],
     "leagues": ["league details"]
   },
-  "joinLeage": {
+  "joinLeague_req": { "league": { "_id": "" } },
+  "joinLeague_res": {
+    "type": "questionPointLeage||questionCoinLeague||predictPointLeague||predictCoinLeage",
     "canJoin": true,
     "message": "",
-    "type": "TimePassed||pointsNeeded"
-  }
+    "declineType": "TimePassed||pointsNeeded",
+    "questions": []
+  },
+  "leagueInfo_req": { "league": { "_id": "" } },
+  "leagueInfo_res": {
+    "type": "questionPointLeage||questionCoinLeague||predictPointLeague||predictCoinLeage",
+    "totalPlayers": 123,
+    "players": [],
+    "startTime": "234243",
+    "endTime": "324234234",
+    "featuredMedia": "sfdsfdsdfsdf",
+    "totalCapacity": 20,
+    "categories": [
+      {
+        "_id": "",
+        "icon": "",
+        "title": "",
+        "deadLine": "123123132",
+        "serverTime": "234234234",
+        "duration": 10
+      }
+    ]
+  },
+  "selectCategory_req": { "_id": "", "league": { "_id": "" } },
+  "selectCategory_res": { "questionPoints": [10, 20, 30, 40] },
+  "selectQuestionPoint_req": { "point": 324, "category": { "_id": "" } },
+  "selectQuestionPoint_res": {
+    "question": {
+      "title": "",
+      "deadLine": "123123132",
+      "serverTime": "234234234",
+      "options": []
+    }
+  },
+  "answer_req": { "question": { "_id": "" }, "selectedAnswer": { "_id": "" } },
+  "leagueLeaderBoard_req": { "league": { "_id": "" } },
+  "leagueLeaderBoard_res": [
+    { "_id": "", "name": "", "point": 123, "rank": 10 }
+  ],
+  "leaderBoard_req": {
+    "startTime": "234234",
+    "endTime": "234234",
+    "duration": "23"
+  },
+  "leaderBoard_res": [{ "player": { "_id": "", "rank": 234, "point": 234 } }],
+  "leagueAdBanner_res": { "league": { "_id": "" } }
 }
