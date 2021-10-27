@@ -8,6 +8,7 @@
   "verify_req": {
     "phoneNumber": "",
     "token": "",
+    "socket": "",
     "deviceInfo": {
       "appName": "",
       "manufacturer": "",
@@ -42,7 +43,16 @@
     "canJoin": true,
     "message": "",
     "declineType": "TimePassed||pointsNeeded",
-    "questions": []
+    "questions": [
+      {
+        "question": {
+          "title": "",
+          "deadLine": "123123132",
+          "serverTime": "234234234",
+          "options": []
+        }
+      }
+    ]
   },
   "leagueInfo_req": { "league": { "_id": "" } },
   "leagueInfo_res": {
@@ -50,6 +60,7 @@
     "totalPlayers": 123,
     "players": [],
     "startTime": "234243",
+    "leaderBoard": [],
     "endTime": "324234234",
     "featuredMedia": "sfdsfdsdfsdf",
     "totalCapacity": 20,
@@ -65,11 +76,18 @@
     ]
   },
   "selectCategory_req": { "_id": "", "league": { "_id": "" } },
-  "selectCategory_res": { "questionPoints": [10, 20, 30, 40] },
+  "selectCategory_res": {
+    "questionPoints": [10, 20, 30, 40],
+    "deadLine": "123123132",
+    "serverTime": "234234234"
+  },
   "selectQuestionPoint_req": { "point": 324, "category": { "_id": "" } },
   "selectQuestionPoint_res": {
+    "totalQuestions": 20,
+    "currentQuestionPosition": 2,
     "question": {
       "title": "",
+      "point": 123,
       "deadLine": "123123132",
       "serverTime": "234234234",
       "options": []
@@ -85,6 +103,8 @@
     "endTime": "234234",
     "duration": "23"
   },
-  "leaderBoard_res": [{ "player": { "_id": "", "rank": 234, "point": 234 } }],
+  "leaderBoard_res": [
+    { "player": { "_id": "", "rank": 234, "point": 234, "avatar": "" } }
+  ],
   "leagueAdBanner_res": { "league": { "_id": "" } }
 }
